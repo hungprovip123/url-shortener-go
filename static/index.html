@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener - Rút gọn liên kết</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔗 URL Shortener</h1>
+            <p>Rút gọn liên kết dài thành liên kết ngắn dễ chia sẻ</p>
+        </header>
+
+        <main>
+            <!-- Form tạo URL ngắn -->
+            <section class="shorten-section">
+                <div class="input-group">
+                    <input type="url" id="urlInput" placeholder="Nhập URL cần rút gọn..." required>
+                    <button id="shortenBtn" onclick="shortenUrl()">Rút gọn</button>
+                </div>
+                <div id="error" class="error hidden"></div>
+                <div id="result" class="result hidden"></div>
+            </section>
+
+            <!-- Danh sách URL -->
+            <section class="urls-section">
+                <div class="section-header">
+                    <h2>📋 Danh sách URL đã tạo</h2>
+                    <button id="refreshBtn" onclick="loadUrls()">🔄 Làm mới</button>
+                </div>
+                <div id="urlsList" class="urls-list">
+                    <div class="loading">Đang tải...</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 URL Shortener - Week 1 Go Learning Project</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
