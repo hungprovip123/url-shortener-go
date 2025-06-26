@@ -33,19 +33,7 @@ Truy cập: `http://localhost:8080`
 - Click "Copy" để copy URL ngắn
 - Click "Mở" để test redirect
 
-### API (tùy chọn)
-```bash
-# Tạo URL ngắn
-curl -X POST http://localhost:8080/api/v1/shorten \
-  -H "Content-Type: application/json" \
-  -d '{"url": "https://www.google.com"}'
 
-# Xem danh sách URL
-curl http://localhost:8080/api/v1/urls
-
-# Xem thống kê
-curl http://localhost:8080/api/v1/stats/abc123
-```
 
 ## Công nghệ sử dụng
 - **Backend**: Go + Gin framework
