@@ -8,7 +8,6 @@ URL Shortener đơn giản được viết bằng Go - rút gọn liên kết d�
 - 📊 Theo dõi số lượt click
 - 🔄 Redirect từ URL ngắn về URL gốc
 - 📋 Xem danh sách và thống kê tất cả URL
-- 🎨 Giao diện web đẹp và dễ sử dụng
 
 ## Cách chạy
 
